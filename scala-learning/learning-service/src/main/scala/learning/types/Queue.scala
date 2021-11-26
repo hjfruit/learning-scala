@@ -59,7 +59,7 @@ object ContravarianceDemo extends App {
 
 
   def getTitle(str: CharSequence): String = str.toString.toUpperCase
-  def getTitle2(str: String): CharSequence = str.toString.toUpperCase
+  def getTitle2(str: String): CharSequence = str.toUpperCase
 
   val f: Function1[String, CharSequence] = getTitle
   val f1: Function1[String, CharSequence] = getTitle2
